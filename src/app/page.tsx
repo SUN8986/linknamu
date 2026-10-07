@@ -8,9 +8,9 @@ const profile = {
 };
 
 const links: LinkItem[] = [
-  { id: "github", title: "🐙 깃허브", url: "https://github.com/sun8986" },
   { id: "blog", title: "✍️ 블로그", url: "https://blog.naver.com/pigcho_o" },
   { id: "instagram", title: "📸 인스타그램", url: "https://www.instagram.com/pigcho_o/" },
+  { id: "github", title: "🐙 깃허브", url: "https://github.com/sun8986" },
 ];
 
 export default function Home() {
