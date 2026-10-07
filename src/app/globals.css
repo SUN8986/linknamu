@@ -1,26 +1,38 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fcf8f3;
+  --foreground: #3a2c2a;
+  --glow-1: #ffe3cf;
+  --glow-2: #fff0d4;
+  --glow-3: #f6ebe3;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1b1714;
+    --foreground: #f5ebe6;
+    --glow-1: rgba(255, 175, 130, 0.14);
+    --glow-2: rgba(255, 190, 130, 0.1);
+    --glow-3: rgba(230, 190, 160, 0.08);
   }
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  background-image:
+    radial-gradient(at 15% 0%, var(--glow-1) 0, transparent 55%),
+    radial-gradient(at 95% 25%, var(--glow-2) 0, transparent 50%),
+    radial-gradient(at 40% 100%, var(--glow-3) 0, transparent 60%);
+  background-attachment: fixed;
 }

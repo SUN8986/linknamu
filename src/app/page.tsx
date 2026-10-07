@@ -1,22 +1,21 @@
 import LinkList, { type LinkItem } from "@/components/LinkList";
 import ProfileHeader from "@/components/ProfileHeader";
 
-// TODO: 보여주기용 더미 값입니다. 실제 내용으로 교체하세요.
 const profile = {
   name: "초돼지",
-  bio: "게으른 완벽주의자",
-  imageUrl: "/profile.svg",
+  bio: "게으른 완벽주의자 | 요즘에는 AI코딩에 관심이 많아요",
+  imageUrl: "/profile.jpg",
 };
 
 const links: LinkItem[] = [
-  { id: "github", title: "GitHub", url: "https://github.com/" },
-  { id: "linkedin", title: "LinkedIn", url: "https://www.linkedin.com/" },
-  { id: "blog", title: "Blog", url: "https://example.com/" },
+  { id: "github", title: "🐙 깃허브", url: "https://github.com/sun8986" },
+  { id: "blog", title: "✍️ 블로그", url: "https://blog.naver.com/pigcho_o" },
+  { id: "instagram", title: "📸 인스타그램", url: "https://www.instagram.com/pigcho_o/" },
 ];
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-md flex-1 flex-col items-center gap-8 px-4 py-12">
+    <main className="mx-auto flex w-full max-w-md flex-1 flex-col items-center gap-10 px-6 py-16 sm:py-24">
       <ProfileHeader
         name={profile.name}
         bio={profile.bio}
