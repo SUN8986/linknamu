@@ -2,7 +2,7 @@ import LinkList, { type LinkItem } from "@/components/LinkList";
 import ProfileHeader from "@/components/ProfileHeader";
 
 const profile = {
-  name: "초돼지",
+  name: "PiGCHO_o",
   bio: "게으른 완벽주의자 | 요즘에는 AI코딩에 관심이 많아요",
   imageUrl: "/profile.jpg",
 };
